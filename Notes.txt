@@ -1,0 +1,9 @@
+Steps for .Net project SonarQube analysis
+
+Open a Developer Command Prompt for VS2015 from the Start menu.
+Navigate to the folder containing the project I want to analyze.
+
+Run the following commands:
+SonarScanner.MSBuild.exe begin /n:BookerMain /v:1.0 /k:booker /d:sonar.host.url=http://192.168.43.7:9090
+MSBuild
+SonarScanner.MSBuild.exe end
